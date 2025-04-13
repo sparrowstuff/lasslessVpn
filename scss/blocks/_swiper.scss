@@ -1,0 +1,24 @@
+.swiper {
+	width: 100%;
+
+	&-pagination {
+		display: contents;
+	}
+
+	&-pagination-bullet {
+		background-color: $grey;
+	}
+
+	&-pagination-bullet-active {
+		background: unset;
+		background-color: $red;
+		width: 2.81rem;
+		height: 0.93rem;
+		border-radius: 0.4rem;
+		transition: width $transition-300, background-color $transition-300;
+	}
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+	width: 8%;
+}

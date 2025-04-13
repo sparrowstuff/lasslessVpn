@@ -1,0 +1,69 @@
+.network {
+	padding: 3.12rem 0 3.12rem;
+	transition: opacity $transition-300, transform $transition-300;
+
+	@media (max-width: 48rem) {
+		padding: 1.56rem 0 1.56rem;
+	}
+
+	&__main {
+		display: flex;
+		flex-direction: column;
+		gap: 9.68rem;
+		align-items: center;
+
+		@media (max-width: 48rem) {
+			gap: 1.93rem;
+		}
+	}
+
+	&__heading {
+		display: flex;
+		flex-direction: column;
+		gap: 1.25rem;
+		align-items: center;
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: clamp($rem-1, 7vw, $rem-218);
+		line-height: $line-312;
+		text-align: center;
+
+		width: 23.93rem;
+
+		@media (max-width: 25rem) {
+			max-width: 17.5rem;
+		}
+	}
+
+	&__description {
+		font-weight: 400;
+		font-size: clamp($rem-070, 7vw, $rem-1);
+		line-height: $line-187;
+		color: $grey;
+		text-align: center;
+
+		@media (max-width: 25rem) {
+			max-width: 17.5rem;
+		}
+	}
+
+	&__companies-list {
+		display: flex;
+		gap: 2.62rem;
+		align-items: center;
+
+		@media (max-width: 41.87rem) {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1.25rem;
+			justify-items: center;
+
+			:nth-child(5) {
+				grid-column: span 2;
+				margin: 0 auto;
+			}
+		}
+	}
+}

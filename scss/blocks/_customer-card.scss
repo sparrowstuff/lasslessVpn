@@ -1,0 +1,67 @@
+.customer-card {
+	padding: 1.87rem 1.87rem 1.87rem;
+	display: flex;
+	flex-direction: column;
+	min-width: 25rem;
+	min-height: 15.37rem;
+	gap: 1.25rem;
+	border: 2px solid $light-grey;
+	border-radius: 0.62rem;
+
+	@media (max-width: 500px) {
+		min-width: 300px;
+		padding: 0.62rem 0.62rem 0.62rem;
+	}
+
+	&__heading {
+		display: flex;
+		gap: 1.25rem;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__profile {
+		display: flex;
+		align-items: center;
+		gap: 1.25rem;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		gap: 0.31rem;
+	}
+
+	&__name {
+		font-weight: 500;
+		font-size: $rem-125;
+		line-height: $line-187;
+	}
+
+	&__city {
+		font-weight: 400;
+		font-size: $rem-088;
+		line-height: $line-187;
+		color: $grey;
+	}
+
+	&__rate {
+		display: flex;
+		gap: 0.62rem;
+		align-items: baseline;
+	}
+
+	&__rating {
+		font-weight: 400;
+		font-size: $rem-1;
+		line-height: $line-187;
+	}
+
+	&__review {
+		font-weight: 400;
+		font-size: $rem-1;
+		line-height: $rem-150;
+
+		margin-bottom: auto;
+	}
+}

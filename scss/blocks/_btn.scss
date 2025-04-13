@@ -1,0 +1,105 @@
+.btn {
+	background-color: $red;
+	padding: 1.25rem 4.06rem 1.25rem 4.06rem;
+	border-radius: 10px;
+	border: none;
+	max-width: 15.62rem;
+
+	font-weight: 700;
+	font-size: clamp($rem-070, 3vw, $rem-1);
+	color: $white;
+
+	cursor: pointer;
+	position: relative;
+	z-index: 5;
+
+	transition: scale $transition-300;
+
+	&:hover,
+	&:focus-visible {
+		outline: unset;
+		scale: 1.1;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0.93rem;
+		left: 1.56rem;
+		width: 80%;
+		height: 100%;
+		box-shadow: 0 0 6.25rem 0 $red-35;
+		filter: blur(8px);
+		background-color: $red-35;
+		z-index: -1;
+	}
+
+	&--round {
+		padding: 0.81rem 2.81rem 0.81rem 2.81rem;
+		background-color: transparent;
+		border-radius: 3.12rem;
+		border: 1px solid $red;
+
+		color: $red;
+
+		transition: color $transition-300, background-color $transition-300,
+			scale $transition-300;
+
+		@media (max-width: 64rem) {
+			padding: 0.81rem 0.81rem 0.81rem 0.81rem;
+		}
+	}
+
+	&--transparent {
+		background-color: transparent;
+		padding: unset;
+		color: $black;
+		transition: scale $transition-300;
+
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: -0.18rem;
+			left: -0.81rem;
+			width: 150%;
+			height: 150%;
+		}
+	}
+
+	&--slider {
+		width: 3.75rem;
+		max-width: unset;
+		padding: 0.81rem 0.93rem 0.93rem 0.87rem;
+		height: 3.75rem;
+		border-radius: 50%;
+		background-color: transparent;
+		border: 2px solid $red;
+		transition: scale $transition-300;
+
+		&:hover,
+		&:focus-visible {
+			scale: 1;
+		}
+
+		@media (max-width: 48rem) {
+			scale: 0.8;
+		}
+	}
+
+	&--round,
+	&--transparent,
+	&--small,
+	&--small-red,
+	&--slider {
+		&::after {
+			position: unset;
+		}
+	}
+
+	&--subscribe {
+		width: 15.6rem;
+		padding: 1.06rem 3.12rem 1.06rem 3.12rem;
+	}
+}

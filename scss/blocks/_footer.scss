@@ -1,0 +1,63 @@
+.footer {
+	padding: 11.25rem 0 6.25rem;
+	background-color: $grey-custom;
+
+	&__main {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		gap: 1.25rem;
+
+		@media (max-width: 38.75rem) {
+			flex-direction: column;
+		}
+	}
+
+	&__left-menu {
+		display: flex;
+		flex-direction: column;
+		gap: 1.93rem;
+	}
+
+	&__lassless-block {
+		display: flex;
+		flex-direction: column;
+		gap: 1.25rem;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		gap: 0.62rem;
+
+		transition: scale $transition-300;
+
+		&:hover,
+		&:focus-visible {
+			outline: unset;
+			scale: 1.1;
+		}
+	}
+
+	&__main-link {
+		font-weight: 500;
+		font-size: $rem-125;
+		line-height: $line-143;
+	}
+
+	&__policy {
+		font-weight: 400;
+		font-size: $rem-1;
+		line-height: $line-187;
+		color: $grey;
+
+		max-width: 21.25rem;
+	}
+
+	&__date {
+		font-weight: 400;
+		font-size: $rem-1;
+		line-height: $line-187;
+		color: $grey;
+	}
+}

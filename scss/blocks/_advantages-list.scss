@@ -1,0 +1,27 @@
+.advantages-list {
+	display: flex;
+	flex-direction: column;
+	gap: 0.93rem;
+
+	@media (max-width: 56.87rem) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media (max-width: 26.25rem) {
+		grid-template-columns: 1fr;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: 0.62rem;
+	}
+
+	&__item-text {
+		font-weight: 400;
+		font-size: $rem-088;
+		line-height: $line-187;
+		color: $grey;
+	}
+}

@@ -1,0 +1,104 @@
+.card {
+	min-height: 47.5rem;
+	border: 2px solid $light-grey;
+	border-radius: 0.62rem;
+	padding: 5rem 4.31rem 3.12rem 4.31rem;
+	display: flex;
+	justify-content: center;
+	max-width: 20.62rem;
+
+	cursor: pointer;
+
+	transition: border-color $transition-300;
+
+	$card: &;
+
+	&:hover,
+	&:focus-visible {
+		outline: unset;
+		border-color: $red;
+
+		#{$card}__btn {
+			color: $white;
+			background-color: $red;
+		}
+
+		#{$card}__icon {
+			animation: cardIconShake 2s ease-in forwards 0.3s;
+		}
+
+		#{$card}__title {
+			scale: 1.3;
+		}
+	}
+
+	@media (max-width: 48rem) {
+		padding: 3.75rem 3.06rem 1.87rem 3.18rem;
+	}
+
+	@media (max-width: 43.75rem) {
+		min-height: 37.87rem;
+	}
+
+	@media (max-width: 25rem) {
+		padding: 1.87rem 1.18rem 0.93rem 1.93rem;
+		max-width: 17.5rem;
+	}
+
+	&__main {
+		display: flex;
+		flex-direction: column;
+		gap: 1.87rem;
+		align-items: center;
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: $rem-125;
+		line-height: $line-187;
+		text-align: center;
+		transition: scale $transition-300;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 0.62rem;
+	}
+
+	&__item {
+		display: flex;
+		gap: 1.25rem;
+		align-items: center;
+	}
+
+	&__text {
+		font-weight: 400;
+		font-size: $rem-085;
+		line-height: $line-187;
+		color: $grey;
+	}
+
+	&__btn-block {
+		display: flex;
+		flex-direction: column;
+		gap: 1.25rem;
+		align-items: center;
+		margin-top: auto;
+	}
+
+	&__price {
+		font-weight: 500;
+		font-size: $rem-156;
+		line-height: $line-187;
+		text-align: center;
+	}
+
+	&__price-per-month {
+		color: $grey;
+	}
+
+	&__btn {
+		width: 11.12rem;
+	}
+}

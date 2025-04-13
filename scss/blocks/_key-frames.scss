@@ -1,0 +1,107 @@
+// header
+@keyframes headerFadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes headerLinkShake {
+	0% {
+		scale: 1;
+	}
+
+	25% {
+		scale: 1.2;
+		transform: rotate(-45deg);
+	}
+
+	75% {
+		scale: 1.2;
+		transform: rotate(360deg);
+	}
+	100% {
+		scale: 1;
+		transform: rotate(360deg);
+	}
+}
+
+// hero-block
+@keyframes hero-title {
+	0% {
+		opacity: 0;
+		transform: translateY(-1.25rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes hero-description {
+	0% {
+		opacity: 0;
+		transform: translateY(1.25rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes hero-btn {
+	0% {
+		opacity: 0;
+		transform: translateY(0.62rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes heroImgFadeIn {
+	0% {
+		opacity: 0;
+		scale: 1.2;
+		transform: translateX(2.5rem);
+	}
+
+	100% {
+		opacity: 1;
+		scale: 1;
+	}
+}
+
+// plan-card
+
+@keyframes cardIconShake {
+	0% {
+		transform: 0;
+	}
+
+	10% {
+		transform: rotate(15deg);
+	}
+
+	25% {
+		transform: rotate(-15deg);
+	}
+
+	50% {
+		transform: rotate(15deg);
+	}
+
+	75% {
+		transform: rotate(-15deg);
+	}
+
+	100% {
+		transform: 0;
+	}
+}

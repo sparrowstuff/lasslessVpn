@@ -1,0 +1,72 @@
+.header {
+	padding: 2.18rem 0 2.18rem;
+
+	animation: headerFadeIn 2s ease-in forwards;
+
+	position: relative;
+	z-index: 9999;
+	// !important
+	// z-index исправляет баг контекста наложения
+
+	&__main {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1.25rem;
+
+		@media (max-width: 31.25rem) {
+			gap: 0.62rem;
+		}
+	}
+
+	&__main-link {
+		display: flex;
+		align-items: center;
+		gap: 0.62rem;
+		transition: scale $transition-300;
+
+		&:hover,
+		&:focus-visible {
+			outline: unset;
+			scale: 1.2;
+		}
+
+		@media (max-width: 48rem) {
+			scale: 0.9;
+		}
+	}
+
+	&__link-icon {
+		animation: headerLinkShake 1s ease-in forwards 2s;
+	}
+
+	&__link-text {
+		font-weight: 500;
+		font-size: $rem-125;
+		line-height: $line-143;
+	}
+
+	&__btn-block {
+		display: flex;
+		align-items: center;
+		gap: 1.93rem;
+
+		@media (max-width: 64rem) {
+			gap: 0.87rem;
+		}
+
+		@media (max-width: 48rem) {
+			display: none;
+		}
+
+		&--burger {
+			@media (max-width: 48rem) {
+				display: flex;
+			}
+
+			@media (max-width: 31.25rem) {
+				flex-direction: column;
+			}
+		}
+	}
+}

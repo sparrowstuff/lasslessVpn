@@ -1,0 +1,30 @@
+// global
+
+@import 'global/_variables';
+@import 'global/_mixins';
+@import 'global/_normalize';
+@import 'global/_reboot';
+@import 'global/_fonts';
+@import 'global/_visually-hidden';
+@import 'global/container';
+
+// blocks
+
+@import 'blocks/_header';
+@import 'blocks/_main-nav';
+@import 'blocks/_btn';
+@import 'blocks/_hero';
+@import 'blocks/_features';
+@import 'blocks/_advantages-list';
+@import 'blocks/_plan';
+@import 'blocks/_card';
+@import 'blocks/_network';
+@import 'blocks/_customer';
+@import 'blocks/_customer-card';
+@import 'blocks/_footer';
+@import 'blocks/_socials';
+@import 'blocks/_burger-menu';
+@import 'blocks/_key-frames';
+@import 'blocks/_show';
+@import 'blocks/_hidden-block';
+@import 'blocks/_swiper';
