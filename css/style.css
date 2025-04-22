@@ -1133,7 +1133,7 @@ ol {
   background-color: #f53838;
 }
 .card:hover .card__icon, .card:focus-visible .card__icon {
-  animation: cardIconShake 2s ease-in forwards 0.3s;
+  animation: cardIconShake 0.8s ease-in forwards 0.3s;
 }
 .card:hover .card__title, .card:focus-visible .card__title {
   scale: 1.3;
@@ -1697,13 +1697,7 @@ ol {
   0% {
     transform: 0;
   }
-  10% {
-    transform: rotate(15deg);
-  }
   25% {
-    transform: rotate(-15deg);
-  }
-  50% {
     transform: rotate(15deg);
   }
   75% {
